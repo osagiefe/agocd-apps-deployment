@@ -17,7 +17,7 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 8080
-CMD [ "npm", "server.js" ]
+EXPOSE 8000
+CMD [ "npm", "start" ]
 
 # This is dummy change for git demo

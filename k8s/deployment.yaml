@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: pyapp
-          image: good777lord/nodeapp:v1
+          image: good777lord/pyapp:v1
           ports:
             - containerPort: 8000

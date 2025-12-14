@@ -10,7 +10,7 @@
 const express = require('express');
 
 // Constants
-const PORT = 8080;
+const PORT = 8000;
 const HOST = '0.0.0.0';
 const OS = require('os');
 const ENV = 'DEVELOPMENT';
@@ -20,17 +20,17 @@ const ENV = 'DEVELOPMENT';
 const app = express();
 app.get('/', (req, res) => {
   res.statusCode = 200;
-  const msg = 'version 2, this was awesome guys!1';
-  //const msg = 'Hello from from Cloud Computing technology, this was awesome guys!1';
+  //const msg = 'version 2, this was awesome guys!1';
+  const msg = 'Hello from from Cloud Computing technology, this was awesome guys!1';
   res.send(getPage(msg));
 });
 app.get('/dev', (req, res) => {
-    res.send('<h1 style="color:red;">This is- version-2!!</h1> \n');
+    res.send('<h1 style="color:green;">This is- version-1!!</h1> \n');
   });
   
 app.get('/test', (req, res) => {
   res.statusCode = 200;
-  const msgtest = 'Version 2 testing!';
+  const msgtest = 'Versiion1  testing!';
   res.send(getPagetest(msgtest));
 });
 
