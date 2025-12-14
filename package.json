@@ -1,7 +1,7 @@
 {
   "name": "argocd-apps-deployment",
   "version": "1.0.0",
-  "description": "## project overview A Dockerised React application build into a container and pushed into Docker Hub, created the index.js file as landing page an server test page,to check if the server is litening at port:3000 as specified, ### Featured technologies •\tNode.js: An open-source JavaScript run-time environment for executing server-side JavaScript code. •\tCloud: Accessing computer and information technology resources through the Internet. •\tContainer Orchestration: Automating the deployment, scaling and management of containerized applications.",
+  "description": "A Dockerised React application build into a container and pushed into Docker Hub, created the index.js file\r as landing page an server test page,to check if the server is litening at port:3000 as specified,\r ### Featured technologies\r •\tNode.js: An open-source JavaScript run-time environment for executing server-side JavaScript code.\r •\tCloud: Accessing computer and information technology resources through the Internet.\r •\tContainer Orchestration: Automating the deployment, scaling and management of containerized applications.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,6 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/clement2019/argocd-apps-deployment.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {

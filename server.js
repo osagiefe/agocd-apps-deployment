@@ -20,12 +20,12 @@ const ENV = 'DEVELOPMENT';
 const app = express();
 app.get('/', (req, res) => {
   res.statusCode = 200;
-  //const msg = 'version 2, this was awesome guys!1';
-  const msg = 'Hello from from Cloud Computing technology, this was awesome guys!1';
+  const msg = 'version 2, this was awesome guys!1';
+  //const msg = 'Hello from from Cloud Computing technology, this was awesome guys!1';
   res.send(getPage(msg));
 });
 app.get('/dev', (req, res) => {
-    res.send('<h1 style="color:green;">This is- version-2!!</h1> \n');
+    res.send('<h1 style="color:red;">This is- version-2!!</h1> \n');
   });
   
 app.get('/test', (req, res) => {
