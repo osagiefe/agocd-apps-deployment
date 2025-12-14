@@ -1,31 +1,72 @@
 ### Deploy-applications through Argocd
 
-project overview
+## project overview
+A Dockerised React application build into a container and pushed into Docker Hub, created the index.js file
+as landing page an server test page,to check if the server is litening at port:3000 as specified,
+### Featured technologies
+•	Node.js: An open-source JavaScript run-time environment for executing server-side JavaScript code.
+•	Cloud: Accessing computer and information technology resources through the Internet.
+•	Container Orchestration: Automating the deployment, scaling and management of containerized applications.
+
+  #####  Prerequisites:
+  $ export docker_username="MY_DOCKER_USERNAME"
+
+  install GIt
+  install Node.js
+  install npm     $npm install
+  install Express.js $install npm express --save
+   Install Node.js
+   install aws CLi
+   Create IAM user with administrative access
+   aws configure
+   aws s3 ls
+   aws sts get-caller-identity
+   install kubernetstes cluster  AWs EKS
+   install kubeconfig
+   install kubectl CLI (command line inerface)
+   install helm
+  Run the following commands in a terminal:
+
+  Create Docker account
+
+  Install Docker CLI or Docker deckstop
+
+  Retrieve and save your Dockerhub user id
+
+  Build the image
+
+ ## In a terminal, run: to start 
+ node -v
+ npm init -y
+ npm install express -save
+
+$ docker build -t $docker_username/deploy-react-kubernetes .
+
+ #####  your image should be listed by running:
+
+  $ docker images
+
+## Ran the command below
+
+ $ node index.js 
+
+# ##### Now inside the dockerfile created
+
+ CMD ["node","server.js"]
 
 
-
-project perequisite:
-
-
-Tools stack:
+## Tools stack:
 
 project workflow
-What thr project Does:
+What the project Does:
 
 --Installement of argocd
 --Application deployment using argocd
 -- Roleback to different working version using argocd
 
-
-
-
 1. Create an EKS Cluster using this command:
 
-# Create EKS cluster
-  eksctl create cluster --name eks-cluster-110 --node-type t2.small --nodes 2 --nodes-min 2 --nodes-max 3 --region eu-west-2
-
-
-in this project ilearnt how to install ArgoCD on Kubernetes, deploy an application, and rollback to a previous version using the Web UI.
+# in this project ilearnt how to install ArgoCD on Kubernetes, deploy an application, and rollback to a previous version using the Web UI.
 
 ArgoCD is a powerful GitOps continuous delivery tool for Kubernetes, and in this step-by-step project ,i will cover:
 - Installing ArgoCD on a Kubernetes cluster
@@ -78,11 +119,11 @@ kubectl get svc -n argocd
 <img width="2156" height="772" alt="Image" src="https://github.com/user-attachments/assets/cd52302a-129f-4973-9c98-30ed162960ce" />
 
 # then get argocd from the webbrowser by edit the service of LoadBalancer
-kubectl get edit svc argocd-server -n argocd
+kubectl edit svc argocd-server -n argocd
 
 # change it to clusterIP to LoadBalancer
 
-#then run
+# then run
 
 kubectl get svc -n argocd
 
