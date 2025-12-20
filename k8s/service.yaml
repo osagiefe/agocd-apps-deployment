@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: pyapp-service
 spec:
+  namespace: default   # 👈 must match the namespace above
   type: LoadBalancer
   selector:
     app: pyapp
